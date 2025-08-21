@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guia Prático</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <h1>🔥 Queimadas na Região Sisaleira</h1>
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="problema.html">Questão Problema</a></li>
+      <li><a href="objetivos.html">Objetivos</a></li>
+      <li><a href="conteudo.html">Conteúdo</a></li>
+      <li><a href="guia.html" class="ativo">Guia</a></li>
+      <li><a href="cronograma.html">Cronograma</a></li>
+      <li><a href="referencias.html">Referências</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero-min">
+    <h2>Guia Prático para a População</h2>
+    <p>O que fazer, o que evitar e como acionar as autoridades.</p>
+  </section>
+
+  <section class="grid-2">
+    <article class="card">
+      <h3>Pequenas queimadas (prevenção & primeiros passos)</h3>
+      <ul>
+        <li>NÃO use fogo para limpeza de terreno; prefira roçagem e coleta.</li>
+        <li>Mantenha aceiros (faixas sem vegetação) ao redor de cercas e depósitos.</li>
+        <li>Armazene resíduos orgânicos para compostagem; não queime folhas.</li>
+        <li>Em caso de foco pequeno, se for seguro, abafe com terra/água e chame ajuda.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Focos maiores: segurança primeiro</h3>
+      <ul>
+        <li>Afastar pessoas idosas, crianças e animais; use máscara/tecido úmido.</li>
+        <li>NÃO tente combater chamas altas ou com vento forte.</li>
+        <li>Evite respirar fumaça e dirija com faróis acesos em áreas com névoa de fumaça.</li>
+        <li>Acione imediatamente as autoridades (veja contatos abaixo).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="card contatos">
+    <h3>Contatos e Autoridades (denúncia e auxílio)</h3>
+    <ul class="lista-contatos">
+      <li>🚒 <b>Corpo de Bombeiros</b>: <a href="tel:193">193</a></li>
+      <li>🛡️ <b>Defesa Civil</b>: <a href="tel:199">199</a></li>
+      <li>🌿 <b>IBAMA – Denúncias</b>: <a href="https://www.gov.br/ibama/pt-br/assuntos/fiscalizacao-e-controle/queimadas" target="_blank" rel="noopener">Formulário e orientações</a></li>
+      <li>🏛️ <b>Secretarias Municipais</b> (Monte Santo, Euclides da Cunha, Quijingue): procure os sites oficiais para canais locais e WhatsApp da Defesa Civil.</li>
+    </ul>
+
+    <a class="botao alerta" target="_blank" rel="noopener"
+       href="https://www.gov.br/ibama/pt-br/assuntos/fiscalizacao-e-controle/queimadas">
+      🚨 Denunciar Queimada
+    </a>
+  </section>
+
+  <section class="card">
+    <h3>Quiz rápido — teste seu conhecimento</h3>
+    <form id="quiz" class="quiz">
+      <fieldset>
+        <legend>1) O que é mais eficaz para prevenir queimadas em propriedades rurais?</legend>
+        <label><input type="radio" name="q1" value="a"/> Uso de fogo controlado sem autorização</label>
+        <label><input type="radio" name="q1" value="b"/> Manter aceiros e alternativas à queima</label>
+        <label><input type="radio" name="q1" value="c"/> Aguardar a época chuvosa</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2) Em caso de foco grande, devo:</legend>
+        <label><input type="radio" name="q2" value="a"/> Enfrentar com baldes</label>
+        <label><input type="radio" name="q2" value="b"/> Priorizar a segurança e ligar 193/199</label>
+        <label><input type="radio" name="q2" value="c"/> Ignorar, o fogo apaga sozinho</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3) Qual tecnologia ajuda a identificar focos de calor?</legend>
+        <label><input type="radio" name="q3" value="a"/> Satélites e sensoriamento remoto</label>
+        <label><input type="radio" name="q3" value="b"/> Termômetros domésticos</label>
+        <label><input type="radio" name="q3" value="c"/> Câmeras analógicas sem infravermelho</label>
+      </fieldset>
+
+      <button type="submit" class="botao">Enviar respostas</button>
+      <p id="resultado-quiz" class="resultado-quiz" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="card anexos">
+    <h3>Downloads em PDF</h3>
+    <ul class="downloads">
+      <li><a href="pdf/checklist-prevencao.pdf" download>✅ Checklist de prevenção (PDF)</a></li>
+      <li><a href="pdf/contatos-uteis.pdf" download>☎️ Contatos úteis (PDF)</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 - Projeto Educativo IFBA - Campus Euclides da Cunha</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

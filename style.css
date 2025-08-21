@@ -1,0 +1,91 @@
+/* ====== Base / Paleta ====== */
+:root{
+    --verde:#1a4d2e;
+    --verde-escuro:#145a32;
+    --laranja:#ff6b35;
+    --vermelho:#e63946;
+    --fundo:#ffffff;
+    --texto:#2e2e2e;
+    --cinza:#f3f5f7;
+    --borda:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--texto); background:var(--fundo); line-height:1.6}
+  .container{max-width:1100px; margin:0 auto; padding:0 16px}
+  
+  /* ====== Header / Nav ====== */
+  header{background:var(--verde); color:#fff}
+  nav{display:flex; align-items:center; gap:16px; padding:14px 0}
+  nav h1{font-size:1.15rem; margin:0}
+  .menu{list-style:none; display:flex; gap:10px; margin-left:auto; flex-wrap:wrap}
+  .menu a{color:#fff; text-decoration:none; padding:8px 12px; border-radius:6px; transition:.2s background}
+  .menu a:hover{background:rgba(255,255,255,.12)}
+  .menu a.ativo{background:var(--laranja); color:#fff; font-weight:600}
+  .menu-toggle{display:none; margin-left:auto; font-size:1.25rem; color:#fff; background:transparent; border:0; cursor:pointer}
+  
+  /* ====== Hero / Banner ====== */
+  .banner{position:relative}
+  .banner img{width:100%; height:320px; object-fit:cover; filter:brightness(.7)}
+  .banner-texto{position:absolute; inset:0; display:grid; place-items:center; text-align:center; color:#fff; padding:16px}
+  .banner-texto h2{font-size:2rem; margin:.25rem 0}
+  section{padding:40px 0}
+  .hero-min{padding:24px 0 8px}
+  
+  /* ====== Cards / Grid ====== */
+  .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+  .card{background:#fff; border:1px solid var(--borda); border-radius:12px; padding:20px; box-shadow:0 1px 2px rgba(16,24,40,.04)}
+  .card h3{margin-top:0}
+  .card ul{padding-left:18px}
+  .card ul li{margin:6px 0}
+  .anexos .downloads{list-style:none; padding-left:0}
+  .anexos .downloads li{margin:8px 0}
+  .anexos .downloads a{text-decoration:none; color:var(--verde-escuro)}
+  .anexos .downloads a:hover{text-decoration:underline}
+  
+  /* ====== Botões ====== */
+  .botao{display:inline-block; background:var(--verde); color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none; border:0; cursor:pointer}
+  .botao:hover{background:var(--verde-escuro)}
+  .botao.alerta{background:var(--vermelho)}
+  .botao.alerta:hover{background:#c71f37}
+  
+  /* ====== Tabela / Cronograma ====== */
+  .table-wrap{overflow:auto; border:1px solid var(--borda); border-radius:12px}
+  table{width:100%; border-collapse:collapse; background:#fff}
+  th,td{padding:12px 14px; border-bottom:1px solid var(--borda); text-align:left}
+  thead th{background:var(--cinza); font-weight:600}
+  
+  /* ====== Timeline ====== */
+  .timeline{list-style:none; padding-left:0; position:relative}
+  .timeline::before{content:""; position:absolute; left:14px; top:0; bottom:0; width:2px; background:var(--borda)}
+  .timeline li{position:relative; padding-left:42px; margin:14px 0}
+  .timeline .dot{position:absolute; left:7px; top:2px; width:16px; height:16px; background:var(--laranja); border-radius:50%; box-shadow:0 0 0 3px #fff}
+  .timeline time{font-weight:700; color:var(--verde)}
+  .timeline p{margin:.25rem 0 0}
+  
+  /* ====== Quiz ====== */
+  .quiz fieldset{border:1px solid var(--borda); border-radius:10px; padding:14px; margin:14px 0}
+  .quiz legend{font-weight:600}
+  .quiz label{display:block; margin:8px 0; cursor:pointer}
+  .resultado-quiz{margin-top:10px; font-weight:600}
+  
+  /* ====== Contatos ====== */
+  .lista-contatos{list-style:none; padding-left:0}
+  .lista-contatos li{margin:8px 0}
+  
+  /* ====== Footer ====== */
+  footer{background:var(--verde); color:#fff; text-align:center; padding:16px; margin-top:30px}
+  
+  /* ====== Responsivo ====== */
+  @media (max-width:860px){
+    .grid-2{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    .menu{display:none; width:100%; flex-direction:column; margin:10px 0 0}
+    .menu.show{display:flex}
+    .menu-toggle{display:inline-block}
+  }
+  
+  /* Seções */
+section { padding: 40px; text-align: center; margin: 20px}
+.resumo p { max-width: 700px; margin: 20px auto; }
